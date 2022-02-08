@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #second-title {
+            background-color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <article id="first-article">
+                <h3>my awsome blog-1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veniam modi molestiae eius, cum
+                    maiores? Nobis officiis aperiam consectetur eos distinctio aspernatur unde quas, est quia beatae
+                    repellat illo libero.</p>
+            </article>
+            <article>
+                <h3 id="second-title">my awsome blog-2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ab cupiditate consectetur ea
+                    exercitationem, voluptate distinctio asperiores tenetur iure id earum recusandae tempore ad
+                    inventore aut? Quae quo reprehenderit optio!</p>
+            </article>
+            <article>
+                <h3 id="third">my awsome blog-3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat in officiis tenetur laborum
+                    accusamus quae ipsum quasi, necessitatibus recusandae vitae explicabo officia reiciendis, quaerat
+                    debitis, atque facilis esse maiores voluptas.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const student = { name: "mustafiz", age: 16, height: 13 }
+        // console.log(document.body);
+        const blogTitles = document.getElementsByTagName('h3');
+        for (const h3 of blogTitles) {
+            // console.log(h3);
+        }
+
+        const blogDetails = document.getElementsByTagName('p');
+        for (const p of blogDetails) {
+            // console.log(p);
+        }
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+        const title = document.getElementById('third');
+        title.innerText = "dipu magi";
+        title.style.backgroundColor = 'yellow';
+        title.style.marginLeft = '20px';
+
+    </script>
+</body>
+
+</html>
