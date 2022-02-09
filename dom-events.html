@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1 onclick="alert('chiku')">Hi this is me Mustafiz!</h1>
+    <button onclick="document.body.style.backgroundColor='yellow'">Click Me</button>
+    <button onclick="makeRed()">Click Me</button>
+    <button id="button-id">Click Me</button>
+    <button id="greenid">Click Me</button>
+    <script src="events.js"></script>
+    <script>
+        const greenButton = document.getElementById('greenid');
+        greenButton.onclick = function () {
+            document.body.style.backgroundColor = 'green';
+
+        }
+
+    </script>
+</body>
+
+</html>

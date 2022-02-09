@@ -15,7 +15,12 @@
 
 <body>
     <header>
-
+        <ul id="list-blogs">
+            <li>Blog-1</li>
+            <li>Blog-2</li>
+            <li>Blog-3</li>
+            <li>Blog-4</li>
+        </ul>
     </header>
     <main>
         <section>
@@ -57,6 +62,11 @@
         title.innerText = "dipu magi";
         title.style.backgroundColor = 'yellow';
         title.style.marginLeft = '20px';
+        const li = document.createElement('li');
+        li.innerText = 'Blog-5';
+        const ul = document.getElementById('list-blogs');
+        ul.appendChild(li);
+
 
     </script>
 </body>
