@@ -10,6 +10,8 @@
 
 <body>
     <p id="clicking-method"></p>
+    <input id="input-field" type="text">
+    <button id="update-button">Update</button>
     <button onclick="justfunction()">
         just function
     </button>
@@ -25,6 +27,15 @@
         document.getElementById('event-button').addEventListener('click', function () {
             const secondButton = document.getElementById('clicking-method');
             secondButton.innerText = "dipu ekta magi,she meyeder curtigun pore";
+        })
+
+
+        document.getElementById('update-button').addEventListener('click', function () {
+            const inputField = document.getElementById('input-field');
+            const p = document.getElementById('clicking-method');
+            p.innerText = inputField.value;
+            inputField.value = '';
+
         })
 
     </script>
