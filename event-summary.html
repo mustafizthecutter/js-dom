@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="clicking-method"></p>
+    <button onclick="justfunction()">
+        just function
+    </button>
+    <button id="event-button">
+        add event listening function
+    </button>
+    <script>
+        function justfunction() {
+            const p = document.getElementById('clicking-method');
+            p.innerText = "set by using function";
+        }
+
+        document.getElementById('event-button').addEventListener('click', function () {
+            const secondButton = document.getElementById('clicking-method');
+            secondButton.innerText = "dipu ekta magi,she meyeder curtigun pore";
+        })
+
+    </script>
+</body>
+
+</html>
