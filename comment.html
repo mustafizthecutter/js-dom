@@ -29,12 +29,11 @@
     <script>
         document.getElementById('btn-id').addEventListener('click', function () {
             const commentBox = document.getElementById('comment-text');
-            const commentText = document.createElement('p');
-            commentText.innerText = commentBox.value;
-            const updateText = document.getElementById('comment-container');
-            updateText.appendChild(commentText);
+            const newComment = document.createElement('p');
+            newComment.innerText = commentBox.value;
+            const updateComment = document.getElementById('comment-container');
+            updateComment.appendChild(newComment);
             commentBox.value = '';
-
         })
 
 
